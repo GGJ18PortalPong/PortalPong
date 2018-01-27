@@ -23,7 +23,6 @@ public class Teleport : MonoBehaviour {
 
         if (portal != null && timeSinceLastTeleport > teleportCooldown)
         {
-            Debug.Log("here");
             Transform destination = portal.destination.transform;
             transform.position = destination.position;
             transform.rotation = destination.rotation;
