@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4129802237190362}
   - component: {fileID: 23675152024873208}
   - component: {fileID: 33149156977366936}
-  - component: {fileID: 114662503167204552}
   - component: {fileID: 65030581924392376}
+  - component: {fileID: 114632219253617070}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1569212665479052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: 0}
+  m_LocalPosition: {x: -8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -94,7 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114662503167204552
+--- !u!114 &114632219253617070
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -102,8 +102,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1569212665479052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1911f96990007a2408218581f8746087, type: 3}
+  m_Script: {fileID: 11500000, guid: a2f6d69ccdf12894badf4e67d9db74dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  friction: 0.377
+  friction: 0.5

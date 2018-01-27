@@ -13,23 +13,26 @@ public class PaddleController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         BallController ball = other.GetComponent<BallController>();
-        Rigidbody rbd = ball.rbd;
-        Vector3 force = other.transform.right * ball.rbd.velocity.magnitude * 2;
-        Vector3 newForce = Vector3.Lerp(force, new Vector3(0, vel * friction), 0.5f) * 2;
-        rbd.velocity += newForce;
+        if (ball)
+        {
+            Rigidbody rbd = ball.rbd;
+            Vector3 force = transform.up * ball.rbd.velocity.magnitude * 2;
+            Vector3 newForce = Vector3.Lerp(force, new Vector3(0, vel * friction), 0.5f) * 2;
+            rbd.velocity += newForce;
+        }
     }
 
     private void Update()
     {
         vel = 0;
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(transform.up * speed * Time.deltaTime);
+            transform.Translate(transform.right * speed * Time.deltaTime);
             vel += speed;
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(-transform.up * speed * Time.deltaTime);
+            transform.Translate(-transform.right * speed * Time.deltaTime);
             vel -= speed;
         }
     }
