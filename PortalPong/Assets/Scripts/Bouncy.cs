@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bouncy : MonoBehaviour
 {
+
     private void OnTriggerEnter(Collider other)
     {
         BallMover ball = other.GetComponent<BallMover>();
