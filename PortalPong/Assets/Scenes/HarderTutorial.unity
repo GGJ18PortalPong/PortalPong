@@ -180,7 +180,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4680509867926948, guid: afd1dd56ff2a06c438a22df220155187, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4680509867926948, guid: afd1dd56ff2a06c438a22df220155187, type: 2}
       propertyPath: m_LocalPosition.z
@@ -325,11 +325,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4753503494988484, guid: 66dc8a5381705e74a963a00663a8b868, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4753503494988484, guid: 66dc8a5381705e74a963a00663a8b868, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4753503494988484, guid: 66dc8a5381705e74a963a00663a8b868, type: 2}
       propertyPath: m_LocalPosition.z
@@ -359,11 +359,6 @@ Prefab:
         type: 2}
       propertyPath: m_Constraints
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114141915685674320, guid: 66dc8a5381705e74a963a00663a8b868,
-        type: 2}
-      propertyPath: vel.x
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66dc8a5381705e74a963a00663a8b868, type: 2}
@@ -501,7 +496,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7757ee2d5e216134fba9d88e4c8784a6, type: 2}
+  - {fileID: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -598,7 +593,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 890389472
+  randomSeed: 348492249
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3810,7 +3805,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4056963054231244, guid: 3fb7acca0e5168d488767d01a5acd13e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 4056963054231244, guid: 3fb7acca0e5168d488767d01a5acd13e, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3845,6 +3840,16 @@ Prefab:
       propertyPath: destination
       value: 
       objectReference: {fileID: 1881726696}
+    - target: {fileID: 114198650023791556, guid: 3fb7acca0e5168d488767d01a5acd13e,
+        type: 2}
+      propertyPath: HorizontalSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114198650023791556, guid: 3fb7acca0e5168d488767d01a5acd13e,
+        type: 2}
+      propertyPath: VerticalSpeed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3fb7acca0e5168d488767d01a5acd13e, type: 2}
   m_IsPrefabParent: 0
@@ -4067,7 +4072,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4645059464950284, guid: d9964762a0ff71245840173a4556cc92, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 4645059464950284, guid: d9964762a0ff71245840173a4556cc92, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4075,15 +4080,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4645059464950284, guid: d9964762a0ff71245840173a4556cc92, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4645059464950284, guid: d9964762a0ff71245840173a4556cc92, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4645059464950284, guid: d9964762a0ff71245840173a4556cc92, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4645059464950284, guid: d9964762a0ff71245840173a4556cc92, type: 2}
       propertyPath: m_LocalRotation.w
