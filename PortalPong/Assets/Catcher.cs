@@ -9,7 +9,8 @@ public class Catcher : MonoBehaviour
         BallMover ball = other.gameObject.GetComponent<BallMover>();
         if (ball)
         {
-            Destroy(ball.gameObject);
+            //Destroy(ball.gameObject);
+            SceneController.LoadNextLevel();
         }
     }
 }
