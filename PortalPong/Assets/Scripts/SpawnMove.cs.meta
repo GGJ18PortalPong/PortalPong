@@ -1,13 +1,9 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 1911f96990007a2408218581f8746087
-timeCreated: 1517031516
-=======
-guid: a2f6d69ccdf12894badf4e67d9db74dd
-timeCreated: 1517043974
->>>>>>> PaddlePortal
+guid: 825e4d3f3d8cdde489e509de164f0a93
+timeCreated: 1517039795
 licenseType: Free
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0

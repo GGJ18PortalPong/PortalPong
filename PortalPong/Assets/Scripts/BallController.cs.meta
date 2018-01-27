@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 41efe69d11c0c7b4ca7e92dfb41b478f
 timeCreated: 1517033692
+=======
+guid: 42844ccf9b3eef949a8af9a8b7c63477
+timeCreated: 1517043971
+>>>>>>> PaddlePortal
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
