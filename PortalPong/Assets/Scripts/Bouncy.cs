@@ -7,7 +7,7 @@ public class Bouncy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        BallController ball = other.GetComponent<BallController>();
+        BallMover ball = other.GetComponent<BallMover>();
         if (ball)
         {
             Rigidbody rbd = ball.rbd;

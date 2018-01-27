@@ -19,12 +19,13 @@ public class Teleport : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+        Vector3 offset = other.transform.position - transform.position;
         PortalConnection portal = other.GetComponent<PortalConnection>();
 
         if (portal != null && timeSinceLastTeleport > teleportCooldown)
         {
             Transform destination = portal.destination.transform;
-            transform.position = destination.position;
+            transform.position = destination.position - offset;
             transform.rotation = destination.rotation;
             timeSinceLastTeleport = 0.0f;
         }

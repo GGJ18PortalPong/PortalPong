@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class BallController : MonoBehaviour
+public class BallMover : MonoBehaviour
 {
     public Rigidbody rbd;
     public Vector3 acceleration;

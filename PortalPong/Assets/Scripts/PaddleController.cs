@@ -12,7 +12,7 @@ public class PaddleController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        BallController ball = other.GetComponent<BallController>();
+        BallMover ball = other.GetComponent<BallMover>();
         Rigidbody rbd = ball.rbd;
         Vector3 force = other.transform.right * ball.rbd.velocity.magnitude * 2;
         Vector3 newForce = Vector3.Lerp(force, new Vector3(0, vel * friction), 0.5f) * 2;
