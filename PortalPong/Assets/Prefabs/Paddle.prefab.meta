@@ -1,17 +1,9 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 17e896232ee88e645bfe8e10b65a32ee
 timeCreated: 1517032970
 licenseType: Free
 NativeFormatImporter:
   mainObjectFileID: 100100000
-=======
-guid: 4716f33484df72d42a8ecdb69a72fc70
-timeCreated: 1517043790
-licenseType: Free
-NativeFormatImporter:
-  mainObjectFileID: 0
->>>>>>> PaddlePortal
   userData: 
   assetBundleName: 
   assetBundleVariant: 
