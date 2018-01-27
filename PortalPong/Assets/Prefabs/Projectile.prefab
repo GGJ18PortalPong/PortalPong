@@ -20,9 +20,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4753503494988484}
   - component: {fileID: 114920343159954370}
+  - component: {fileID: 114804494623106634}
+  - component: {fileID: 54416997916851344}
+  - component: {fileID: 135532355607638538}
+  - component: {fileID: 114141915685674320}
   m_Layer: 0
   m_Name: Projectile
-  m_TagString: Untagged
+  m_TagString: GameBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +40,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4847080079620180}
   - component: {fileID: 33226810834143552}
-  - component: {fileID: 135108063411146590}
   - component: {fileID: 23897217933304674}
   m_Layer: 0
   m_Name: Sphere
@@ -52,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1166353316085708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.100203544, y: 0.4066017, z: 0.026359523}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4847080079620180}
@@ -81,7 +84,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -97,7 +99,6 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -113,7 +114,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1390973677803056}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114920343159954370
+--- !u!54 &54416997916851344
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1166353316085708}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 8
+  m_CollisionDetection: 0
+--- !u!114 &114141915685674320
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -121,17 +137,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 1166353316085708}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41efe69d11c0c7b4ca7e92dfb41b478f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rbd: {fileID: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  vel: {x: 200, y: 0, z: 0}
+--- !u!114 &114804494623106634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1166353316085708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c3cf6032f6a564aa77c8ac74182193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportCooldown: 1
+--- !u!114 &114920343159954370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1166353316085708}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 636df1d02550c5c45baad7c11f6dd41e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
---- !u!135 &135108063411146590
+  speed: 10
+--- !u!135 &135532355607638538
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1390973677803056}
-  m_Material: {fileID: 0}
+  m_GameObject: {fileID: 1166353316085708}
+  m_Material: {fileID: 13400000, guid: f7a691fad5053e54d84caab7431dbd09, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
