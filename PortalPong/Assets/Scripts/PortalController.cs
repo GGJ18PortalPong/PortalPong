@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PortalController : MonoBehaviour
 {
@@ -47,6 +48,11 @@ public class PortalController : MonoBehaviour
                 Portal.transform.Translate(transform.right * HorizontalSpeed * Time.deltaTime);
             }
         }
+		if (Input.GetKeyDown(KeyCode.R))
+		{
+			Scene loadedLevel = SceneManager.GetActiveScene();
+			SceneManager.LoadScene(loadedLevel.buildIndex);
+		}
     }
 
     bool ClearUp()
