@@ -53,6 +53,11 @@ public class PortalController : MonoBehaviour
 			Scene loadedLevel = SceneManager.GetActiveScene();
 			SceneManager.LoadScene(loadedLevel.buildIndex);
 		}
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     bool ClearUp()
