@@ -6,6 +6,7 @@ public class Catcher : MonoBehaviour
 {
     public AudioManager audioManager;
     public ParticleSystem explosion;
+    AudioSource audioSource;
     public float delay = 2.0f;
 
     public void Explode(Vector3 position)
@@ -16,6 +17,7 @@ public class Catcher : MonoBehaviour
     private void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -23,10 +25,15 @@ public class Catcher : MonoBehaviour
         BallMover ball = other.gameObject.GetComponent<BallMover>();
         if (ball)
         {
-            //audioManager.AddSignal();
+            
             Explode(transform.position);
             Destroy(ball.gameObject);
+            audioSource.Play();
             Invoke("NextLevel", delay);
+            if (audioManager != null)
+            {
+                audioManager.AddSignal();
+            }
         }
     }
     private void NextLevel()
