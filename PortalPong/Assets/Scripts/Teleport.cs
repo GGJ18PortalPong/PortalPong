@@ -7,6 +7,7 @@ public class Teleport : MonoBehaviour {
     public AudioSource enterAudio;
     public AudioSource exitAudio;
     public float teleportCooldown = 1.0f;
+    public bool UseOffset = true;
 
     private float timeSinceLastTeleport = 5.0f;
 
@@ -27,8 +28,16 @@ public class Teleport : MonoBehaviour {
 
         if (portal != null && timeSinceLastTeleport > teleportCooldown)
         {
+            
             Transform destination = portal.destination.transform;
-            transform.position = destination.position - offset;
+            if (UseOffset)
+            {
+                transform.position = destination.position - offset;
+            }
+            else
+            {
+                transform.position = destination.position;
+            }
             //transform.rotation = destination.rotation;
             timeSinceLastTeleport = 0.0f;
 

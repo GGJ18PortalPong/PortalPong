@@ -10,6 +10,7 @@ public class BallMover : MonoBehaviour
     public Vector3 acceleration;
     public Vector3 vel;
     private AudioSource audioSource;
+    public float maxVel = 150.0f;
 
     private void Awake()
     {
@@ -20,7 +21,11 @@ public class BallMover : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rbd.AddForce(acceleration);
+        if (rbd.velocity.magnitude < maxVel)
+        {
+            rbd.AddForce(acceleration);
+        }
+        
     }
 
     private void OnCollisionEnter(Collision collision)
