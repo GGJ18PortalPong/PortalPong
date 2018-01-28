@@ -704,7 +704,7 @@ Prefab:
     - target: {fileID: 198070486636339060, guid: fd5266709365c584fa1b111ae6a70ec2,
         type: 2}
       propertyPath: ColorModule.enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198070486636339060, guid: fd5266709365c584fa1b111ae6a70ec2,
         type: 2}
@@ -779,7 +779,7 @@ Prefab:
     - target: {fileID: 198070486636339060, guid: fd5266709365c584fa1b111ae6a70ec2,
         type: 2}
       propertyPath: InitialModule.startColor.maxGradient.ctime1
-      value: 33153
+      value: 55319
       objectReference: {fileID: 0}
     - target: {fileID: 198070486636339060, guid: fd5266709365c584fa1b111ae6a70ec2,
         type: 2}
@@ -790,6 +790,11 @@ Prefab:
         type: 2}
       propertyPath: InitialModule.startColor.maxGradient.m_NumColorKeys
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 198070486636339060, guid: fd5266709365c584fa1b111ae6a70ec2,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxGradient.ctime0
+      value: 42212
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fd5266709365c584fa1b111ae6a70ec2, type: 2}
