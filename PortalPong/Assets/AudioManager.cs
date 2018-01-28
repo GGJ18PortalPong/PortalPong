@@ -12,7 +12,6 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        signal1.mute = true;
         signal2.mute = true;
         signal3.mute = true;
         noise.volume = 1;
@@ -20,20 +19,33 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    public void ResetAudio()
+    {
+        signal1.Stop();
+        signal2.Stop();
+        signal3.Stop();
+        noise.Play();
+        noise.volume = 1;
+    }
+
     public void AddSignal()
     {
-        noise.volume -= 1 / 3;
-        if (signal1.mute)
+        if (!signal1.isPlaying)
         {
-            signal1.mute = false;
+            noise.volume = .5f;
+            signal1.Play();
+            signal2.Play();
+            signal3.Play();
         }
         else if (signal2.mute)
         {
+            noise.volume = .25f;
             signal2.mute = false;
         }
         else if (signal3.mute)
         {
             signal3.mute = false;
+            noise.Stop();
         }
     }
 }

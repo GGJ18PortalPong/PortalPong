@@ -5,18 +5,30 @@ using UnityEngine;
 public class GameInitializer : MonoBehaviour {
 
     public GameObject sceneControllerPrefab;
+    public GameObject audioManagerPrefab;
     public float loadDelay = 5.0f;
     //private SceneController sceneController;
 
     private void Awake()
     {
-         /*sceneController = GameObject.FindObjectOfType<SceneController>();
+        /*sceneController = GameObject.FindObjectOfType<SceneController>();
 
-        if (sceneController == null)
+       if (sceneController == null)
+       {
+           sceneController = GameObject.Instantiate(sceneControllerPrefab).GetComponent<SceneController>();
+       }
+       */
+        GameObject obj = GameObject.FindGameObjectWithTag("AudioManager");
+        AudioManager audioManager;
+        if (obj == null)
         {
-            sceneController = GameObject.Instantiate(sceneControllerPrefab).GetComponent<SceneController>();
+            audioManager = GameObject.Instantiate(audioManagerPrefab).GetComponent<AudioManager>();
         }
-        */
+        else
+        {
+            audioManager = obj.GetComponent<AudioManager>();
+            audioManager.ResetAudio();
+        }
         Invoke("NextLevel", loadDelay);
     }
 
