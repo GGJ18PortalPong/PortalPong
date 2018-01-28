@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PortalConnection : MonoBehaviour {
-
+public class PortalConnection : MonoBehaviour
+{
     public GameObject destination;
-
-
 }
