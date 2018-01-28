@@ -30,14 +30,15 @@ public class Catcher : MonoBehaviour
             Destroy(ball.gameObject);
             audioSource.Play();
             Invoke("NextLevel", delay);
-            if (audioManager != null)
-            {
-                audioManager.AddSignal();
-            }
+           
         }
     }
     private void NextLevel()
     {
+        if (audioManager != null)
+        {
+            audioManager.AddSignal();
+        }
         SceneController.LoadNextLevel();
     }
 }
