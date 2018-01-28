@@ -6,7 +6,6 @@ TagManager:
   tags:
   - GameBall
   - AudioManager
-  - Wall
   layers:
   - Default
   - TransparentFX
