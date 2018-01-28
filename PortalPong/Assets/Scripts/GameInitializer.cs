@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameInitializer : MonoBehaviour {
 
-    public GameObject sceneControllerPrefab;
+    //public GameObject sceneControllerPrefab;
     public GameObject audioManagerPrefab;
     public float loadDelay = 5.0f;
     //private SceneController sceneController;
@@ -19,6 +19,7 @@ public class GameInitializer : MonoBehaviour {
            sceneController = GameObject.Instantiate(sceneControllerPrefab).GetComponent<SceneController>();
        }
        */
+        Timer.startTime = Time.time;
         GameObject obj = GameObject.FindGameObjectWithTag("AudioManager");
         AudioManager audioManager;
         if (obj == null)
