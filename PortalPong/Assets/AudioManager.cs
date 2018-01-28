@@ -12,6 +12,9 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
+        signal1.Play();
+        signal2.Play();
+        signal3.Play();
         signal2.mute = true;
         signal3.mute = true;
         noise.volume = 1;
@@ -35,9 +38,9 @@ public class AudioManager : MonoBehaviour
         if (!signal1.isPlaying)
         {
             noise.volume = .5f;
-            signal1.Play();
-            signal2.Play();
-            signal3.Play();
+            //signal1.Play();
+            //signal2.Play();
+            //signal3.Play();
         }
         else if (signal2.mute)
         {

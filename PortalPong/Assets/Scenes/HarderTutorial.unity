@@ -360,6 +360,11 @@ Prefab:
       propertyPath: m_Constraints
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 82744699342368460, guid: 66dc8a5381705e74a963a00663a8b868,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66dc8a5381705e74a963a00663a8b868, type: 2}
   m_IsPrefabParent: 0
