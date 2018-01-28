@@ -6,7 +6,10 @@ TagManager:
   tags:
   - GameBall
   - AudioManager
+<<<<<<< .merge_file_a15108
+=======
   - Wall
+>>>>>>> .merge_file_a08724
   layers:
   - Default
   - TransparentFX
