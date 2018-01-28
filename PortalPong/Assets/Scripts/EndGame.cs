@@ -19,7 +19,20 @@ public class EndGame : MonoBehaviour {
             if (Timer.startTime > -1.0f)
             {
                 int timeTaken = (int)Time.time - (int)Timer.startTime;
-                timeText.text = string.Concat(timeTextString, timeTaken.ToString());
+
+				float minutes = Mathf.Floor(timeTaken / 60);
+				float seconds = Mathf.RoundToInt(timeTaken%60);
+				string minutesString = minutes.ToString();
+				string secondsString = seconds.ToString();
+
+				if(minutes < 10) {
+					minutesString = "0" + minutes.ToString();
+				}
+				if(seconds < 10) {
+					secondsString = "0" + Mathf.RoundToInt(seconds).ToString();
+				}
+
+				timeText.text = timeTextString + minutesString + ":" + secondsString;
             }
             else
             {
