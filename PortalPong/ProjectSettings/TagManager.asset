@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
   tags: []
-=======
-  tags:
-  - GameBall
-  - AudioManager
->>>>>>> e699a2f234c0f5fd9bb06d25296e2c6293d1ac6f
   layers:
   - Default
   - TransparentFX
