@@ -17,7 +17,7 @@ public class AudioManager : MonoBehaviour
         signal1.volume = defaultMaxVol;
         signal2.volume = defaultMaxVol;
         signal3.volume = defaultMaxVol;
-        signal4.volume = defaultMaxVol;
+        signal4.volume = defaultMaxVol * 2;
         signal2.mute = true;
         signal3.mute = true;
         signal4.mute = true;
