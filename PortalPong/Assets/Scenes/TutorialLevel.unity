@@ -164,6 +164,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 1763338538947614, guid: 23cafd34847ed3341a84ca33a4fd5bc4, type: 2}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23cafd34847ed3341a84ca33a4fd5bc4, type: 2}
   m_IsPrefabParent: 0
@@ -344,6 +348,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1763338538947614, guid: 23cafd34847ed3341a84ca33a4fd5bc4, type: 2}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23cafd34847ed3341a84ca33a4fd5bc4, type: 2}
   m_IsPrefabParent: 0
@@ -509,6 +517,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1763338538947614, guid: 23cafd34847ed3341a84ca33a4fd5bc4, type: 2}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23cafd34847ed3341a84ca33a4fd5bc4, type: 2}
   m_IsPrefabParent: 0
@@ -670,6 +682,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1763338538947614, guid: 23cafd34847ed3341a84ca33a4fd5bc4, type: 2}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23cafd34847ed3341a84ca33a4fd5bc4, type: 2}
   m_IsPrefabParent: 0
@@ -723,6 +739,10 @@ Prefab:
     - target: {fileID: 4676785924810810, guid: 23cafd34847ed3341a84ca33a4fd5bc4, type: 2}
       propertyPath: m_LocalScale.x
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763338538947614, guid: 23cafd34847ed3341a84ca33a4fd5bc4, type: 2}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23cafd34847ed3341a84ca33a4fd5bc4, type: 2}
