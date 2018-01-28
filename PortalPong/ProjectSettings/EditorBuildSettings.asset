@@ -15,6 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/HarderTutorial.unity
     guid: 25af644a23fcdf04da585454cca1df16
   - enabled: 1
+    path: Assets/Scenes/KinsleyLevel.unity
+    guid: 03d3ad2653d49457886e687398187511
+  - enabled: 1
+    path: Assets/Scenes/KinsleyLevel2.unity
+    guid: 61d5f8f6c8cdb4025a56387378136eec
+  - enabled: 1
+    path: Assets/Scenes/Pachinko.unity
+    guid: 9b4e97d40c5a99e4a8de147054c73275
+  - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: 6940d546a28f2b149853dcb6294123a6
   - enabled: 0
