@@ -9,11 +9,12 @@ public class BallMover : MonoBehaviour
     public Rigidbody rbd;
     public Vector3 acceleration;
     public Vector3 vel;
-    public AudioSource audio;
+    private AudioSource audioSource;
 
     private void Awake()
     {
         rbd = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
         rbd.AddForce(vel);
     }
 
@@ -24,7 +25,7 @@ public class BallMover : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        audio.panStereo = transform.position.x / 10;
-        audio.Play();
+        audioSource.panStereo = transform.position.x / 10;
+        audioSource.Play();
     }
 }
