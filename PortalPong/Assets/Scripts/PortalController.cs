@@ -58,6 +58,11 @@ public class PortalController : MonoBehaviour
         {
             Application.Quit();
         }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            GameObject.FindObjectOfType<Catcher>().NextLevel();
+        }
     }
 
     bool ClearUp()

@@ -33,7 +33,7 @@ public class Catcher : MonoBehaviour
            
         }
     }
-    private void NextLevel()
+    public void NextLevel()
     {
         if (audioManager != null)
         {
