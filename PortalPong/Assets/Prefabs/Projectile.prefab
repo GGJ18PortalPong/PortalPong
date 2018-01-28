@@ -422,7 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enterAudio: {fileID: 82455211169897044}
   exitAudio: {fileID: 0}
-  teleportCooldown: 0.1
+  teleportCooldown: 0.3
   UseOffset: 0
 --- !u!114 &114920343159954370
 MonoBehaviour:
