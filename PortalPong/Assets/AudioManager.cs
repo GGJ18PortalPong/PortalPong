@@ -24,6 +24,8 @@ public class AudioManager : MonoBehaviour
         signal1.Stop();
         signal2.Stop();
         signal3.Stop();
+        signal2.mute = true;
+        signal3.mute = true;
         noise.Play();
         noise.volume = 1;
     }
