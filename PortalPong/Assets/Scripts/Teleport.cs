@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Teleport : MonoBehaviour {
 
+    public AudioSource enterAudio;
+    public AudioSource exitAudio;
     public float teleportCooldown = 1.0f;
+
     private float timeSinceLastTeleport = 5.0f;
 
 	// Use this for initialization
@@ -28,8 +31,11 @@ public class Teleport : MonoBehaviour {
             transform.position = destination.position - offset;
             transform.rotation = destination.rotation;
             timeSinceLastTeleport = 0.0f;
-        }
 
-        
+            enterAudio.panStereo = other.transform.position.x / 10;
+            enterAudio.Play();
+            exitAudio.panStereo = portal.transform.position.x / 10;
+            exitAudio.Play();
+        }
     }
 }
