@@ -12,6 +12,7 @@ public class BallMover : MonoBehaviour
     private AudioSource audioSource;
     public float maxVel = 150.0f;
 
+
     private void Awake()
     {
         rbd = GetComponent<Rigidbody>();
@@ -32,5 +33,11 @@ public class BallMover : MonoBehaviour
     {
         audioSource.panStereo = transform.position.x / 10;
         audioSource.Play();
+    }
+
+    private void OnDestroy()
+    {
+        
+        Debug.Log("BALL DESTROYED!!!");
     }
 }
