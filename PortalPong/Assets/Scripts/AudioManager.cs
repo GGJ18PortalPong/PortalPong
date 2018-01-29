@@ -8,23 +8,29 @@ public class AudioManager : MonoBehaviour
     public AudioSource signal1;
     public AudioSource signal2;
     public AudioSource signal3;
+    public AudioSource signal4;
     public AudioSource noise;
     public float defaultMaxVol = 0.2f;
 
     private void Start()
     {
-        signal1.Play();
-        signal2.Play();
-        signal3.Play();
         signal1.volume = defaultMaxVol;
         signal2.volume = defaultMaxVol;
         signal3.volume = defaultMaxVol;
-        signal1.mute = true;
+        signal4.volume = defaultMaxVol * 2;
         signal2.mute = true;
         signal3.mute = true;
+        signal4.mute = true;
         noise.volume = defaultMaxVol;
 
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void Update()
+    {
+        signal2.timeSamples = signal1.timeSamples;
+        signal3.timeSamples = signal1.timeSamples;
+        signal4.timeSamples = signal1.timeSamples;
     }
 
     public void ResetAudio()
@@ -32,21 +38,23 @@ public class AudioManager : MonoBehaviour
         signal1.Stop();
         signal2.Stop();
         signal3.Stop();
-        signal1.Play();
-        signal2.Play();
-        signal3.Play();
-        signal1.mute = true;
+        signal4.Stop();
         signal2.mute = true;
         signal3.mute = true;
+        signal4.mute = true;
         noise.Play();
         noise.volume = defaultMaxVol;
     }
 
     public void AddSignal()
     {
-        if (signal1.mute)
+        if (!signal1.isPlaying)
         {
-            noise.volume = defaultMaxVol / 2;
+            signal1.Play();
+            signal2.Play();
+            signal3.Play();
+            signal4.Play();
+            noise.volume = defaultMaxVol /2;
             signal1.mute = false;
             
         }
@@ -58,6 +66,11 @@ public class AudioManager : MonoBehaviour
         else if (signal3.mute)
         {
             signal3.mute = false;
+            noise.volume = defaultMaxVol / 4;
+        }
+        else if (signal4.mute)
+        {
+            signal4.mute = false;
             noise.Stop();
         }
     }
