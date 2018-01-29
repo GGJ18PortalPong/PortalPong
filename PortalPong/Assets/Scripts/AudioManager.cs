@@ -26,6 +26,13 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    private void Update()
+    {
+        signal2.timeSamples = signal1.timeSamples;
+        signal3.timeSamples = signal1.timeSamples;
+        signal4.timeSamples = signal1.timeSamples;
+    }
+
     public void ResetAudio()
     {
         signal1.Stop();
