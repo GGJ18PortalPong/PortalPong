@@ -118,6 +118,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1242639047898996, guid: 3fb7acca0e5168d488767d01a5acd13e,
     type: 2}
   m_PrefabInternal: {fileID: 1190960297}
+--- !u!1 &231282895 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1925736540361872, guid: d9964762a0ff71245840173a4556cc92,
+    type: 2}
+  m_PrefabInternal: {fileID: 377698320}
 --- !u!1001 &234510876
 Prefab:
   m_ObjectHideFlags: 0
@@ -213,7 +218,7 @@ Prefab:
         type: 2}
       propertyPath: destination
       value: 
-      objectReference: {fileID: 225533038}
+      objectReference: {fileID: 762860972}
     - target: {fileID: 1925736540361872, guid: d9964762a0ff71245840173a4556cc92, type: 2}
       propertyPath: m_Name
       value: Portal to goal
@@ -264,7 +269,7 @@ Prefab:
         type: 2}
       propertyPath: destination
       value: 
-      objectReference: {fileID: 225533038}
+      objectReference: {fileID: 231282895}
     - target: {fileID: 1925736540361872, guid: d9964762a0ff71245840173a4556cc92, type: 2}
       propertyPath: m_Name
       value: Portal other side to goal
@@ -581,6 +586,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23cafd34847ed3341a84ca33a4fd5bc4, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &762860972 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1925736540361872, guid: d9964762a0ff71245840173a4556cc92,
+    type: 2}
+  m_PrefabInternal: {fileID: 429388738}
 --- !u!1001 &851998119
 Prefab:
   m_ObjectHideFlags: 0
@@ -1373,6 +1383,26 @@ Prefab:
         type: 2}
       propertyPath: ShapeModule.radiusThickness
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198070486636339060, guid: fd5266709365c584fa1b111ae6a70ec2,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198070486636339060, guid: fd5266709365c584fa1b111ae6a70ec2,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198070486636339060, guid: fd5266709365c584fa1b111ae6a70ec2,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198070486636339060, guid: fd5266709365c584fa1b111ae6a70ec2,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
       objectReference: {fileID: 0}
     - target: {fileID: 198070486636339060, guid: fd5266709365c584fa1b111ae6a70ec2,
         type: 2}
